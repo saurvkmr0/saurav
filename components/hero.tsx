@@ -67,26 +67,35 @@ export function Hero() {
               <Button
                 variant="outline"
                 size="icon"
+                asChild
                 className="rounded-full hover:scale-110 hover:shadow-md transition-all duration-300 hover:rotate-12 bg-transparent"
               >
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub Profile</span>
+                <a href="https://github.com/saurvkmr0" target="_blank" rel="noreferrer">
+                  <Github className="h-5 w-5" />
+                  <span className="sr-only">GitHub Profile</span>
+                </a>
               </Button>
               <Button
                 variant="outline"
                 size="icon"
+                asChild
                 className="rounded-full hover:scale-110 hover:shadow-md transition-all duration-300 hover:rotate-12 bg-transparent"
               >
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/saurav-kumar-57279b290/" target="_blank" rel="noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                  <span className="sr-only">LinkedIn Profile</span>
+                </a>
               </Button>
               <Button
                 variant="outline"
                 size="icon"
+                asChild
                 className="rounded-full hover:scale-110 hover:shadow-md transition-all duration-300 hover:rotate-12 bg-transparent"
               >
-                <Mail className="h-5 w-5" />
-                <span className="sr-only">Email Contact</span>
+                <a href="mailto:saurvkmr0@gmail.com">
+                  <Mail className="h-5 w-5" />
+                  <span className="sr-only">Email Contact</span>
+                </a>
               </Button>
             </div>
           </motion.div>
