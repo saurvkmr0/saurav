@@ -10,7 +10,7 @@ export function Hero() {
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-2 md:px-8 lg:px-16">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100" />
       <div
         className="absolute inset-0 opacity-30"
