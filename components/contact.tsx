@@ -32,13 +32,13 @@ export function Contact() {
   }
 
   const contactInfo = [
-    { icon: Mail, label: "Email", value: "your.email@example.com", href: "mailto:your.email@example.com" },
-    { icon: Phone, label: "Phone", value: "+1 (555) 123-4567", href: "tel:+15551234567" },
-    { icon: MapPin, label: "Location", value: "Your City, Country", href: "#" },
+    { icon: Mail, label: "Email", value: "saurvkmr0@gmail.com", href: "mailto:saurvkmr0@gmail.com" },
+    { icon: Phone, label: "Phone", value: "+91 6201136766", href: "tel:+916201136766" },
+    { icon: MapPin, label: "Location", value: "Hubli, India", href: "#" },
   ]
 
   return (
-    <section className="py-20 bg-white" id="contact">
+    <section className="py-20 bg-white px-2 md:px-8 lg:px-16 " id="contact">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -156,14 +156,6 @@ export function Contact() {
                   </div>
                 </motion.a>
               ))}
-            </div>
-
-            <div className="bg-gradient-to-br from-blue-50 to-slate-50 p-6 rounded-xl">
-              <h4 className="font-semibold text-slate-800 mb-2">Response Time</h4>
-              <p className="text-slate-600">
-                I typically respond to messages within 24 hours. For urgent inquiries, feel free to call or connect on
-                LinkedIn.
-              </p>
             </div>
           </motion.div>
         </div>

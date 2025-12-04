@@ -6,11 +6,11 @@ import { motion } from "framer-motion"
 
 export function Hero() {
   const scrollToWork = () => {
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+    document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden px-2 md:px-8 lg:px-16">
       <div className="absolute inset-0 bg-gradient-to-br from-slate-50 via-white to-slate-100" />
       <div
         className="absolute inset-0 opacity-30"
@@ -36,7 +36,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2 }}
           >
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">Your Name</span>
+            <span className="bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">SAURAV KUMAR</span>
           </motion.h1>
 
           <motion.p
@@ -67,26 +67,35 @@ export function Hero() {
               <Button
                 variant="outline"
                 size="icon"
+                asChild
                 className="rounded-full hover:scale-110 hover:shadow-md transition-all duration-300 hover:rotate-12 bg-transparent"
               >
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub Profile</span>
+                <a href="https://github.com/saurvkmr0" target="_blank" rel="noreferrer">
+                  <Github className="h-5 w-5" />
+                  <span className="sr-only">GitHub Profile</span>
+                </a>
               </Button>
               <Button
                 variant="outline"
                 size="icon"
+                asChild
                 className="rounded-full hover:scale-110 hover:shadow-md transition-all duration-300 hover:rotate-12 bg-transparent"
               >
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn Profile</span>
+                <a href="https://www.linkedin.com/in/saurav-kumar-57279b290/" target="_blank" rel="noreferrer">
+                  <Linkedin className="h-5 w-5" />
+                  <span className="sr-only">LinkedIn Profile</span>
+                </a>
               </Button>
               <Button
                 variant="outline"
                 size="icon"
+                asChild
                 className="rounded-full hover:scale-110 hover:shadow-md transition-all duration-300 hover:rotate-12 bg-transparent"
               >
-                <Mail className="h-5 w-5" />
-                <span className="sr-only">Email Contact</span>
+                <a href="mailto:saurvkmr0@gmail.com">
+                  <Mail className="h-5 w-5" />
+                  <span className="sr-only">Email Contact</span>
+                </a>
               </Button>
             </div>
           </motion.div>

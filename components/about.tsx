@@ -12,7 +12,7 @@ export function About() {
   ]
 
   return (
-    <section className="py-20 bg-white" id="about">
+    <section className="py-20 bg-white px-2 md:px-8 lg:px-16" id="about">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

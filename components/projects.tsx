@@ -41,7 +41,7 @@ export function Projects() {
   ]
 
   return (
-    <section className="py-20 bg-slate-50" id="projects">
+    <section className="py-20 bg-slate-50 px-2 md:px-8 lg:px-16" id="projects">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}

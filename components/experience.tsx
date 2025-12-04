@@ -9,16 +9,42 @@ export function Experience() {
   const experiences = [
     {
       company: "Helio-AI",
-      role: "Full-Stack Developer",
-      period: "Previous Position",
+      role: "Backend Developer",
+      period: "Nov 2024 – Present",
       icon: Building,
       achievements: [
-        "Implemented Instagram & WhatsApp webhooks using Meta APIs for real-time messaging integration",
-        "Developed Shopify webhook event handlers for e-commerce automation and order processing",
-        "Built scalable backend services to handle high-volume webhook traffic",
-        "Integrated third-party APIs with robust error handling and retry mechanisms",
+        "Built and maintained Meta integrations (Instagram, WhatsApp, Messenger) with Node.js + TypeScript, powering unified messaging for 10+ partner brands and thousands of daily conversations.",
+        "Implemented conversational commerce workflows (product cards, dynamic replies, quick actions, guided flows) that boosted in-chat product engagement by 35%+.",
+        "Engineered Instagram Comment-to-DM automation using Meta webhooks and TypeScript services, delivering a 2–3x lift in DM-based lead capture.",
+        "Developed high-throughput media messaging APIs for multi-channel agent replies, cutting support response time by ~30%.",
+        "Designed Helpdesk services for ticketing, customer activity retrieval, and conversation history endpoints to streamline support operations.",
+        "Optimized ticket reply tracking with partial database indexes, significantly accelerating resolution workflows.",
+        "Built ticket distribution and assignment logic to balance agent workloads and reduce resolution time by 20–30%.",
+        "Improved backend performance with Redis caching, queues, async workers, and event-driven Node.js pipelines for low-latency processing.",
+        "Developed a scalable email campaign platform integrated with Mailgun and Google Cloud Tasks (rate-limited, template-driven, scheduled dispatch).",
       ],
-      technologies: ["Node.js", "Express.js", "Meta APIs", "Shopify APIs", "Webhooks", "MongoDB"],
+      technologies: [
+        "Node.js",
+        "TypeScript",
+        "Meta APIs",
+        "Redis",
+        "MongoDB",
+        "Message Queues",
+        "Google Cloud Tasks",
+        "Mailgun",
+      ],
+    },
+    {
+      company: "Webengo",
+      role: "Frontend Developer",
+      period: "Dec 2023 – Oct 2024",
+      icon: Building,
+      achievements: [
+        "Developed and maintained responsive marketing websites with HTML, CSS, JavaScript, and React.",
+        "Integrated REST APIs by partnering closely with backend teams, ensuring data-rich experiences.",
+        "Created reusable UI components and design systems to keep UX consistent and reduce build time.",
+      ],
+      technologies: ["React", "JavaScript", "HTML", "CSS", "REST APIs", "Design Systems"],
     },
   ]
 
@@ -30,7 +56,7 @@ export function Experience() {
   ]
 
   return (
-    <section className="py-20 bg-white" id="experience">
+    <section className="py-20 bg-white px-2 md:px-8 lg:px-16" id="experience">
       <div className="container mx-auto px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -39,11 +65,11 @@ export function Experience() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">Experience & Integrations</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-slate-800 mb-6">Work Experience</h2>
           <div className="w-24 h-1 bg-blue-600 mx-auto mb-8"></div>
         </motion.div>
 
-        <div className="grid lg:grid-cols-2 gap-8 mb-16">
+        <div className="grid lg:grid-cols-1 gap-8 mb-16">
           {experiences.map((exp, index) => (
             <motion.div
               key={index}
@@ -57,7 +83,7 @@ export function Experience() {
                 boxShadow: "0 20px 40px rgba(0,0,0,0.1)",
               }}
             >
-              <Card className="h-full hover:shadow-xl transition-all duration-300">
+              <Card className="h-full hover:shadow-xl transition-all duration-300 px-2md:px-8 lg:px-16 py-6 md:py-12">
                 <CardHeader>
                   <div className="flex items-center gap-3 mb-2">
                     <exp.icon className="h-8 w-8 text-blue-600" />
@@ -98,7 +124,7 @@ export function Experience() {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-2xl font-bold text-slate-800 mb-8 text-center">API Integrations Expertise</h3>
+          <h3 className="text-2xl font-bold text-slate-800 mb-8 text-center">Integrations Expertise</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {integrations.map((integration, index) => (
               <motion.div
