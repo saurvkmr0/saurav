@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 export function Hero() {
   const scrollToWork = () => {
-    document.getElementById("projects")?.scrollIntoView({ behavior: "smooth" })
+    document.getElementById("experience")?.scrollIntoView({ behavior: "smooth" })
   }
 
   return (
