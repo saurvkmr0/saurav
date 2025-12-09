@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <About />
       <Experience />
-      <Projects />
+      {/* <Projects /> */} {/* todo: be added later */}
       <Skills />
       <Contact />
     </main>
